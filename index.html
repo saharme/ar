@@ -10,13 +10,17 @@
 </head>
 <body>
   <model-viewer
-    src="PotPlant.glb"
-    ar
-    ar-modes="scene-viewer webxr"
-    quick-look-browsers="safari"
-    camera-controls
-    auto-rotate
-    environment-image="neutral">
-  </model-viewer>
+  src="PotPlant.glb"
+  ar
+  ar-modes="scene-viewer quick-look webxr"
+  environment-image="neutral"
+  camera-controls
+  auto-rotate
+  reveal="interaction"
+  disable-gesture-interaction>
+  <button slot="ar-button" style="font-size:20px; padding: 12px 24px; margin: 10px;">
+    🚀 View in AR
+  </button>
+</model-viewer>
 </body>
 </html>
